@@ -1,0 +1,22 @@
+machine:
+  node:
+    version:
+      4.2.0
+
+dependencies:
+  pre:
+    # Use Firefox for testing due to CircleCI's aged version of Chrome.
+    - mkdir ../ff-release
+    - wget -O ff-release.tar.bz2 'https://archive.mozilla.org/pub/firefox/releases/43.0b5/linux-x86_64/en-US/firefox-43.0b5.tar.bz2' && tar xjf ff-release.tar.bz2:
+        pwd: ../ff-release
+  cache_directories:
+    - node_modules
+
+test:
+  pre:
+    - webdriver-manager update --standalone
+    - webdriver-manager start:
+        background: true
+    - sleep 5
+  override:
+    - gulp
