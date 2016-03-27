@@ -6,7 +6,7 @@ var gulp = require('gulp'),
 
 var config = {
     protractor: {
-        configFile: 'protractor.conf.js'
+        configFile: 'config/protractor.config.js'
     },
     paths: {
         js: [
