@@ -1,0 +1,33 @@
+{
+  "name": "protractor-boilerplate",
+  "version": "0.0.1",
+  "description": "Boilerplate for Protractor with Gulp, SauceLabs, and CircleCI integration.",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidadas/protractor-boilerplate.git"
+  },
+  "keywords": [
+    "Protractor",
+    "SauceLabs"
+  ],
+  "author": "David Adams",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidadas/protractor-boilerplate/issues"
+  },
+  "homepage": "https://github.com/davidadas/protractor-boilerplate#readme",
+  "devDependencies": {
+    "eslint": "^2.5.1",
+    "eslint-plugin-protractor": "^1.4.0",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^2.0.0"
+  },
+  "dependencies": {
+    "gulp-protractor": "^2.2.0",
+    "protractor": "^3.2.2"
+  }
+}
