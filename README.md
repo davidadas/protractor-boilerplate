@@ -54,3 +54,11 @@ Rule                         | Default       | Options
 [no-browser-sleep][]         | 1             |
 [no-by-xpath][]              | 1             |
 [no-describe-selectors][]    | 1             |
+
+## Author
+
+© 2016 David Adams
+
+## License
+
+Licensed under the [MIT license](LICENSE).
